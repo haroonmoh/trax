@@ -611,7 +611,7 @@ class SubwordTextEncoder(TextEncoder):
         # If there is no possible encoding of the escaped token then one of the
         # characters in the token is not in the alphabet. This should be
         # impossible and would be indicative of a bug.
-        assert False, "Token substring not found in subtoken vocabulary."
+        assert False, "Token substring: " + subtoken + " not found in subtoken vocabulary."
 
     return ret
 
